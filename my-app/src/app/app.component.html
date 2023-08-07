@@ -1,0 +1,17 @@
+
+<div *ngIf="WhatToshow!=3">
+<button [disabled]="WhatToshow==1"(click)="show(1)">Login</button>
+<button [disabled]="WhatToshow==2"(click)="show(2)">Register</button>
+</div>
+
+<div *ngIf="WhatToshow==1">
+<app-loginuser></app-loginuser>
+</div>
+
+<div *ngIf=" WhatToshow==2">
+    <app-registeruser></app-registeruser>
+</div>
+
+<div *ngIf="WhatToshow==3">
+    <app-dashboard></app-dashboard>
+</div>

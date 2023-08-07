@@ -1,0 +1,56 @@
+<h1>Addproject</h1>
+Project Name : <br>
+<textarea  cols="40" rows="2" [(ngModel)]="details.projectname"></textarea><br>
+
+Reason : <br>
+<select [(ngModel)]="details.reason">
+    <option>--select--</option>
+    <option value="Business">Businees</option>
+    <option value="Dealership">Dealership</option>
+    <option value="Transport">Transport</option>
+</select><br>
+
+Type : <br>
+<select [(ngModel)]="details.type">
+    <option>--select--</option>
+    <option value="Internal">Internal</option>
+    <option value="External">External</option>
+    <option value="Vendor">Vendor</option>
+</select><br>
+
+Division : <br>
+<select [(ngModel)]="details.division">
+    <option>--select--</option>
+    <option value="Compressor">Compressor</option>
+    <option value="filter">filter</option>
+    <option value="glass">glass</option>
+    <option value="pumps">pumps</option>
+</select><br>
+
+Category : <br>
+<select [(ngModel)]="details.category">
+    <option>--select--</option>
+    <option value="QualityA">QualityA</option>
+    <option value="QualityB">QualityB</option>
+    <option value="QualityC">QualityC</option>
+</select><br>
+
+
+Startdate : <br>
+<input type="date" [(ngModel)]="details.startdate"><br>
+Enddate : <br>
+<input type="date" [(ngModel)]="details.enddate"><br>
+location : <br>
+<select [(ngModel)]="details.location">
+    <option>--select--</option>
+    <option value="Pune">Pune</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Delhi">Delhi</option>
+</select><br>
+
+Status : {{statusval}} <br>
+<button (click)="Addproject()">Addproject</button>
+
+
+
+
